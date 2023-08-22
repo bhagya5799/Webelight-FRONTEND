@@ -12,7 +12,7 @@ const CommitActivity = ({ repoFullName }) => {
         // Fetch commit activity from GitHub API
         axios.get(`https://api.github.com/repos/${repoFullName}/stats/commit_activity`, {
             headers: {
-                'User-Agent': 'Your-App-Name',
+                'User-Agent': 'github-repo-app',
             },
         })
             .then(response => {
@@ -48,7 +48,6 @@ const CommitActivity = ({ repoFullName }) => {
                 <MenuItem value="deletions">Deletions</MenuItem>
                 <MenuItem value="changes">Changes</MenuItem>
             </Select>
-            {/* <ReactHighcharts config={chartConfig} highcharts={Highcharts} /> */}
         </div>
     );
 };

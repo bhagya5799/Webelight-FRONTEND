@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import moment from 'moment';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-import CommitActivity from '../CommitActivity';
+
 import {
     List,
     ListItem,
