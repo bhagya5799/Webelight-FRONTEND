@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Container, Grid } from '@mui/material';
+import RepoList from './Components/RepoList';
+import CommitActivity from './Components/CommitActivity';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <h1>Most Starred GitHub Repositories</h1>
+      <Grid container spacing={3}>
+        <Grid item xs={12} md={16}>
+          <RepoList />
+        </Grid>
+      
+      </Grid>
+    </Container>
   );
-}
-
+};
 export default App;
