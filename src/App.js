@@ -11,7 +11,6 @@ const App = () => {
         <Grid item xs={12} md={16}>
           <RepoList />
         </Grid>
-
       </Grid>
     </Container>
   );
