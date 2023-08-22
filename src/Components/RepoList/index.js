@@ -124,9 +124,7 @@ const RepoList = () => {
                     </Box>
                 </ListItem>
             ))}
-            {repos.map((each)=>(
-                <CommitActivity repoFullName={each.full_name} />
-            ))}
+        
         </List>
     );
 };
