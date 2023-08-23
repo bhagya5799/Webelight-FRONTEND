@@ -124,7 +124,6 @@ const RepoList = () => {
                     </Box>
                 </ListItem>
             ))}
-        
         </List>
     );
 };
